@@ -1,0 +1,445 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+.secao{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/*=======================================================================================================*/
+/*HEADER */
+.container-topo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.logo_matheus{
+    width: 100%;
+    max-width: 80px;
+}
+.menu-topo{
+    color: white;
+    display: flex;   
+}
+.menu-topo li{
+    margin-left: 40px;
+    margin-right: 40px;
+    text-decoration: none;
+    list-style: none;
+}
+.menu-topo a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*=======================================================================================================*/
+/*Seção 1 - Habilidades */
+.secao-1{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url(img/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secao-1::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.card p{
+    font-weight: bolder;
+}
+.foto-card{
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+
+.conhecimentos{
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon{
+    width: 60px;
+    margin: 10px;
+}
+
+.tech, .ferramentas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=======================================================================================================*/
+/*Seção 2 - Sobre */
+.secao-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+.txt_sobre{
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    line-height: 30px;
+}
+
+/*=======================================================================================================*/
+/*Seção 3 - Portifólio */
+.secao-3{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url(img/fundo_portifolio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secao-3::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.sites_projetos{
+    position: absolute;
+    width: 700px;
+}
+
+.foto_port{
+    width: 250px;
+}
+.jogos_base{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.jogos_base h2{
+    margin-bottom: 60px;
+}
+.jogos{
+    width: 100%;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jg_1 h3, .jg_2 h3{
+    text-align: center;
+}
+.jg_1 p, .jg_2 p{
+  
+    width: 100%;
+    max-width: 250px;
+    text-align: justify;
+}
+
+
+
+
+/*===========================================================================================================*/
+/*Rodapé*/
+.rodape{
+    background-color: black;
+    text-align: center;
+}
+
+
+@media (max-width:500px){
+body{
+    width: 500px;
+    box-sizing: border-box;
+    
+}
+*{
+    max-width: 500px;
+}
+/*=======================================================================================================*/
+/*HEADER */
+    .container-topo{
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+    
+    }
+    .menu-topo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+  
+    .menu-topo{
+        width: 100%;    
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .menu-topo li{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-decoration: none;
+        list-style: none;
+        border-bottom: 1px solid white;
+    }
+    .menu-topo a{
+       
+        color: white;
+        text-decoration: none;
+    }
+    .logo_matheus{
+        width: 100%;
+        max-width: 80px;
+        padding-top: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*=======================================================================================================*/
+/*Seção 1 - Habilidades */
+    .secao-1{
+        position: relative;
+        width: 100%;
+        height: 700px;
+        background-image: url(img/Fundo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 0 -100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 500px;
+    }
+    .secao-1::before{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        max-width: 500px;
+    }
+
+    .card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+
+    }
+    .card p{
+        font-weight: bolder;
+    }
+    .foto-card{
+        width: 100%;
+        max-width: 150px;
+        border-radius: 50%;
+        background-color: white;
+        padding: 1px;
+        margin-bottom: 10px;
+    }
+
+
+    .conhecimentos{
+        margin-top: 60px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+    .icon{
+        width: 60px;
+        margin: 10px;
+    }
+
+    .tech, .ferramentas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 300px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+/*=======================================================================================================*/
+/*Seção 2 - Sobre */
+    .secao-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+    }
+    .txt_sobre{
+        width: 100%;
+        max-width: 400px;
+        text-align: justify;
+        line-height: 30px;
+    }
+    .txt_sobre h2{
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+/*=======================================================================================================*/
+/*Seção 3 - Portifólio */
+    .secao-3{
+        position: relative;
+        width: 100%;
+        height: 900px;
+        background-image: url(img/fundo_portifolio.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 -100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 500px;
+    }
+    .secao-3::before{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        max-width: 500px;
+    }
+    .sites_projetos{
+        position: absolute;
+        width: 500px;
+    }
+
+    .foto_port{
+        width: 200px;
+    }
+    .jogos_base{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .jogos_base h2{
+        margin-bottom: 30px;
+    }
+    .jogos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .jg_1, .jg_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto;
+    }
+    .jg_1 h3, .jg_2 h3{
+        text-align: center;
+    }
+    .jg_1 p, .jg_2 p{
+    
+        width: 100%;
+        max-width: 250px;
+        text-align: justify;
+    }
+}
