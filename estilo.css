@@ -1,6 +1,8 @@
-body{
+*{
+    margin:0;
     padding: 0;
-    margin: 0;
+}
+body{
     background-color: black;
     color: white;
 }
@@ -129,7 +131,7 @@ body{
 .secao-3{
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-image: url(img/fundo_portifolio.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -164,12 +166,15 @@ body{
     justify-content: center;
     align-items: center;
 }
-.jogos_base h2{
+.title_porti{
+    margin-top: 30px;
+}
+.describ_title{
     margin-bottom: 60px;
 }
 .jogos{
     width: 100%;
-    /*background-color: red;*/
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -186,6 +191,58 @@ body{
 
 
 
+.card_base{
+    position: relative;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid black;
+    width: 100%;
+    max-width: 200px;
+    background-color: rgb(80, 67, 56);
+    box-shadow: inset 0px 0px 30px 5px black;
+    border-radius: 10px;
+    min-height: 400px;
+  }
+  .descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    margin: 30px;
+   
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .descricao p{
+    width:100%;
+    word-break: break-all;
+    margin-top: -50px;
+   
+  }
+  a:visited{
+    color: white;
+  }
+  
+  .img{
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+    margin-top: 30px;
+    border: 2px solid black;
+  }
+  
+  .card_base:hover{
+    transform: scale(1.1);
+  }
+
+
 
 /*===========================================================================================================*/
 /*Rodapé*/
@@ -195,14 +252,20 @@ body{
 }
 
 
+
+
+
+
+
+
 @media (max-width:500px){
 body{
-    width: 500px;
+    width: 450px;
     box-sizing: border-box;
     
 }
 *{
-    max-width: 500px;
+    max-width: 450px;
 }
 /*=======================================================================================================*/
 /*HEADER */
@@ -276,7 +339,7 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 500px;
+        max-width: 450px;
     }
     .secao-1::before{
         content: "";
@@ -289,7 +352,7 @@ body{
         width: 100%;
         height: 100%;
         opacity: 0.5;
-        max-width: 500px;
+        max-width: 450px;
     }
 
     .card{
@@ -333,7 +396,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 300px;
+        max-width: 250px;
         text-align: center;
     }
 
@@ -384,9 +447,9 @@ body{
         background-size: cover;
         background-position: 0 -100px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         max-width: 500px;
     }
     .secao-3::before{
@@ -422,7 +485,7 @@ body{
     .jogos{
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
@@ -442,4 +505,68 @@ body{
         max-width: 250px;
         text-align: justify;
     }
+
+
+
+
+
+    .card_base{
+        position: relative;
+        margin: 25px auto;
+        display: flex;
+        flex-direction: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        border: 2px solid black;
+        width: 100%;
+        max-width: 200px;
+        background-color: rgb(80, 67, 56);
+        box-shadow: inset 0px 0px 30px 5px black;
+        border-radius: 5px;
+        min-height: 340px;
+      }
+      .descricao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        margin: 15px;
+        margin-top: 30px;
+       
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    
+      .descricao p{
+        width:100%;
+        font-size: 15px;
+        word-break: break-all;
+        margin-top: -1px;
+       
+      }
+      a:visited{
+        color: white;
+      }
+      
+      .img{
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin-top: 15px;
+        border: 2px solid black;
+      }
+      
+      .card_base:hover{
+        transform: scale(1.1);
+      }
+
+      .rodape{
+        position: relative;
+        text-align: center;
+        margin-top: -60px;
+      }
 }
