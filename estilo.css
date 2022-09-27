@@ -235,12 +235,10 @@ a{
 body{
     width: 100%;
     box-sizing: border-box;
-    max-width: 380px;
+    max-width: 100vw;
     
 }
-*{
-    max-width: 380px;
-}
+
 /*=======================================================================================================*/
 /*HEADER */
     .container-topo{
@@ -304,7 +302,7 @@ body{
     .secao-1{
         position: relative;
         width: 100%;
-        height: 700px;
+        height: 750px;
         background-image: url(img/Fundo.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -353,7 +351,7 @@ body{
 
 
     .conhecimentos{
-        margin-top: 60px;
+        margin-top: 30px;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -375,7 +373,9 @@ body{
         text-align: center;
         margin-top: 50px;
     }
-
+    .tech h3, .ferramentas h3{
+        margin-bottom: 20px;
+    }
 
 
 
