@@ -1,4 +1,4 @@
-*{
+*,html,body{
     margin:0;
     padding: 0;
 }
@@ -80,6 +80,7 @@ body{
 }
 .card p{
     font-weight: bolder;
+    margin-top: 20px;
 }
 .foto-card{
     width: 100%;
@@ -137,8 +138,9 @@ body{
     background-size: cover;
     background-position: 0 -100px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 .secao-3::before{
     content: "";
@@ -152,122 +154,92 @@ body{
     height: 100%;
     opacity: 0.5;
 }
-.sites_projetos{
+.title_port{
     position: absolute;
-    width: 700px;
+    top: 0;
+    margin-top: 50px;
+    font-size: 2.5em;
 }
 
-.foto_port{
-    width: 250px;
-}
 .jogos_base{
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
-.title_porti{
-    margin-top: 30px;
-}
-.describ_title{
-    margin-bottom: 60px;
-}
-.jogos{
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.jg_1 h3, .jg_2 h3{
-    text-align: center;
-}
-.jg_1 p, .jg_2 p{
-  
-    width: 100%;
-    max-width: 250px;
-    text-align: justify;
-}
-
-
 
 .card_base{
     position: relative;
-    margin: 50px auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    border: 2px solid black;
     width: 100%;
-    background-color: rgb(80, 67, 56);
-    box-shadow: inset 0px 0px 30px 5px black;
-    border-radius: 10px;
-    min-height: 400px;
-  }
-  .descricao{
+    max-width: 430px;
+    background-color: rgba(0, 0, 0, 0.363);
+    color: white;
+    min-height: 150px;
+    border-radius: 15px;
+}
+a{
+    text-decoration: none;
+}
+.play{
+    position: absolute;
+    display: none;
+    margin-left: 50%;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.644);
+}
+.describe_base{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 180px;
-    margin: 30px;
-   
-  }
-  a{
-    text-decoration: none;
-    color: white;
-  }
-
-  .descricao p{
-    width:100%;
-    word-break: break-all;
-    margin-top: -50px;
-   
-  }
-  a:visited{
-    color: white;
-  }
-  
-  .img{
-    margin-left: 60px;
-    width: 120px;
-    height: 120px;
-    border: 1px solid black;
-    margin-top: 30px;
-  }
-  
-  .card_base:hover{
-    transform: scale(1.1);
-  }
+    margin: 10px 30px;
+    text-align: justify;
+}
+.describe_base p{
+    margin-top: 10px;
+}
+.img_base{
+    margin-left: 10px;
+}
+.img_base img{
+    border-radius: 10px;
+}
+.card_base:hover{
+    transform: scale(1.2);   
+}
+.card_base:hover .play{
+    display: block;
+}
 
 /*===========================================================================================================*/
 /*Rodapé*/
 .rodape{
     background-color: black;
     text-align: center;
+    margin: 30px;
 }
 
 
-
-.card_base{
-    display: block;
-}
-.card_base_{
-    display: none;
-}
 
 
 
 
 @media (max-width:500px){
 body{
-    width: 450px;
+    width: 100%;
     box-sizing: border-box;
+    max-width: 380px;
     
 }
 *{
-    max-width: 450px;
+    max-width: 380px;
 }
 /*=======================================================================================================*/
 /*HEADER */
@@ -376,6 +348,7 @@ body{
         background-color: white;
         padding: 1px;
         margin-bottom: 10px;
+        margin-top: 30px;
     }
 
 
@@ -400,7 +373,9 @@ body{
         align-items: center;
         max-width: 250px;
         text-align: center;
+        margin-top: 50px;
     }
+
 
 
 
@@ -422,12 +397,13 @@ body{
     }
     .txt_sobre{
         width: 100%;
-        max-width: 450px;
+        max-width: 320px;
         text-align: justify;
         line-height: 30px;
     }
     .txt_sobre h2{
         text-align: center;
+        margin-bottom: 20px;
     }
 
 
@@ -440,108 +416,98 @@ body{
 
 /*=======================================================================================================*/
 /*Seção 3 - Portifólio */
-    .secao-3{
-        position: relative;
-        width: 100%;
-        height: 900px;
-        background-image: url(img/fundo_portifolio.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0 -100px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        max-width: 450px;
-    }
-    .secao-3::before{
-        content: "";
-        position: absolute;
-        top:0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-color: black;
-        width: 100%;
-        height: 100%;
-        opacity: 0.5;
-        max-width: 450px;
-    }
-    .sites_projetos{
-        position: absolute;
-        width: 450px;
-        margin-bottom: 200px;
-    }
+.secao-3{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(img/fundo_portifolio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.secao-3::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.title_port{
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    font-size: 2.5em;
+}
 
-    .foto_port{
-        width: 200px;
-    }
-    .jogos_base{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .jogos_base h2{
-        margin-bottom: 30px;
-    }
-    .jogos{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .jg_1_1, .jg_2_2{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 40px auto;
-        width: 400px;
-    }
-    .jg_1 h3, .jg_2 h3{
-        text-align: center;
-    }
-    .jg_1 p, .jg_2 p{
-    
-        width: 100%;
-        max-width: 400px;
-        text-align: justify;
-    }
+.jogos_base{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    .card_base{
-        display: none;
-    }
-    .card_base_{
-        display: block;
-    }
+.card_base{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 330px;
+    background-color: rgba(0, 0, 0, 0.363);
+    color: white;
+    min-height: 100px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+a{
+    text-decoration: none;
+}
 
+.describe_base{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 30px;
+    text-align: justify;
+}
+.describe_base p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.describe_base h2{
+    font-size: 20px;
+}
+.img_base{
+    margin-left: 10px;
+}
+.img_base img{
+    border-radius: 10px;
+    width: 100px;
+}
+.play{
+    display: none;
+}
 
-    .card_base_{
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
-       align-items: center;
-       border: 2px solid black;
-       background-color: rgb(80, 67, 56);
-       box-shadow: inset 0px 0px 30px 5px black;
+.card_base:hover{
+    transform: scale(1);
+}
+.card_base:hover .play{
+    display: none;
+}
 
-    }
-    .img_{
-        width: 110px;
-        margin-left: 20px;
-    }
-   
-    .descricao_{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 20px;
-        padding: 10px;
-        
-    }
       .rodape{
         position: relative;
         text-align: center;
