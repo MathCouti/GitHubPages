@@ -464,12 +464,12 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 330px;
+    max-width: 85%;
     background-color: rgba(0, 0, 0, 0.363);
     color: white;
-    min-height: 100px;
+    min-height: 150px;
     border-radius: 15px;
-    margin-bottom: 50px;
+    margin: 25px auto;
 }
 a{
     text-decoration: none;
@@ -485,7 +485,8 @@ a{
 }
 .describe_base p{
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 100%;
+    
 }
 .describe_base h2{
     font-size: 20px;
