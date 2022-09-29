@@ -443,11 +443,11 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 50px auto;
+        margin: 10px auto;
     }
     .txt_sobre{
         width: 100%;
-        max-width: 320px;
+        max-width: 450px;
         text-align: justify;
         line-height: 30px;
     }
@@ -560,11 +560,58 @@ a{
     display: none;
 }
 
-      .rodape{
-        position: relative;
-        text-align: center;
-        margin-top: -60px;
-      }
+
+
+/*=======================================================================================================*/
+/*Secao 4*/
+
+.secao-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+form{
+    
+    width: 100%;
+    max-width: 300px;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-bottom: 1px solid white;
+}
+label,input{
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+}
+input{
+    padding-left: 10px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.title_contato{
+    margin-top: 70px;
+    padding-top: 30px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    font-size: 2.5em;
+    border-top: 1px solid white;
+}
+
+
+
+
+.rodape{
+    position: relative;
+    text-align: center;
+    margin-top: 60px;
+}
 
 
 
